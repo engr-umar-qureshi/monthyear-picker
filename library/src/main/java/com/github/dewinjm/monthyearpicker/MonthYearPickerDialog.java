@@ -105,7 +105,7 @@ public class MonthYearPickerDialog extends AlertDialog implements DialogInterfac
             createTitle(year, monthOfYear);
 
         setButton(BUTTON_POSITIVE, themeContext.getString(android.R.string.ok), this);
-        setButton(BUTTON_NEGATIVE, themeContext.getString(android.R.string.cancel), this);
+        setButton(BUTTON_NEUTRAL, themeContext.getString(android.R.string.cancel), this);
 
         presenter = new Presenter(new PickerView(view), monthFormat);
         presenter.init(year, monthOfYear, this);
